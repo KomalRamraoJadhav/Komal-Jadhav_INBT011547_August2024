@@ -5,39 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battlefly</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
         <div class="container">
             <img src="images/logo1.jpg" alt="Battlefly Logo" class="logo">
             <nav>
-                <a href="#products">Products/Services</a>
+                <a href="#hero">Home</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Testimonials</a>
                 <a href="#newsletter">Newsletter</a>
-                <a href="#about-us">About Us</a>
                 <a href="#contact-us">Contact Us</a>
             </nav>
         </div>
     </header>
     
     <div class="content">
-        <section class="hero">
-            <div class="hero-image">
-                <img src="images/main1.jpg" alt="War Image">
-            </div>
+        <div id="hero" class="hero-image">
             <div class="hero-text">
                 <h1>Games of War</h1>
-                <p>Experience the thrill of intense battles and strategic warfare. Join the community of warriors in the ultimate gaming experience.</p>
+                <p>Experience the thrill of intense battles and <br> strategic warfare.<br>
+                    Join the community of warriors in the <br>ultimate gaming experience.</p>
                 <a href="home.html" class="join-button">Join Now</a>
             </div>
-        </section>
+        </div>
 
-        <div class="games-collection">
+        <div id="services" class="games-collection">
             <div class="collection-text">
-                <h1>Trending Collection</h1>
+                <h1>Trending Battle Services</h1>
                 <p>Explore the latest and most popular game collections, packed with excitement and innovation.
                     These selections offer the best in gaming, delivering unmatched experiences for every kind of player.
                 </p>
-                <a href="#" class="browse-button">Show More</a>
+                <a href="#services" class="browse-button">Show More</a>
             </div>
             <div class="collection-grid">
                 <div class="game-card">
@@ -64,7 +66,10 @@
             </div>
         </div>
 
-        <div class="stats-section">
+
+        <div id="testimonials" class="stats-section">
+            <h1>Registered Players and Customer Feedbacks</h1>
+            
             <div class="stat-box">
                 <h2>105K<span class="dot">.</span></h2>
                 <p>Community Earning</p>
@@ -81,99 +86,129 @@
                 <h2>875<span class="dot">.</span></h2>
                 <p>Total Sponsors</p>
             </div>
+            
+            <div class="feedback-cards">
+                <div class="feedback-card">
+                    <p>"This platform is a game changer for competitive gaming."</p>
+                    <span>- Alex M.</span>
+                </div>
+                <div class="feedback-card">
+                    <p>"I've had the best gaming experience here. The community is fantastic!"</p>
+                    <span>- Sarah J.</span>
+                </div>
+                <div class="feedback-card">
+                    <p>"Top-notch gameplay and rewards system. Highly recommended!"</p>
+                    <span>- John D.</span>
+                </div>
+                <div class="feedback-card">
+                    <p>"I love the variety of tournaments and challenges. Keeps me coming back!"</p>
+                    <span>- Emily R.</span>
+                </div>
+            </div>
         </div>
-        
 
-        <div class="community-section">
+
+        
+        <div id="community" class="community-section">
             <div class="community-content">
                 <h2>LET'S PLAY TOGETHER</h2>
                 <h1>JOIN BATTLEFLY ESPORTS TO BECOME NEXT PRO GAMER TODAY!</h1>
                 <p>Join a vibrant community of gamers where you can sharpen your skills, compete with top players, and take your gaming experience to the next level. Whether you're aiming to go pro or just love the thrill of competition, our community is the perfect place for you.</p>
-                <a href="#" class="community-button">Join Community</a>
+                <a href="#community" class="community-button">Join Community</a>
             </div>
             <div class="community-image">
-                <img src="images/game.png" alt="Join Gamix Esports">
+                <img src="images/game.jpeg" alt="Join Gamix Esports">
             </div>
         </div>
+
         
-        <div class="blog-section">
+        <div id="blogs" class="blog-section">
             <h1>Latest Blog Posts</h1>
             <div class="blog-container">
                 <div class="blog-card">
                     <img src="images/news1.jpg" alt="Blog Post Image">
                     <h3>The Future of Esports</h3>
                     <p>Explore the latest trends shaping the esports industry and what to expect in the future.</p>
-                    <a href="#" class="read-more-button">Read More</a>
+                    <a href="#blogs" class="read-more-button">Read More</a>
                 </div>
                 <div class="blog-card">
                     <img src="images/news2.jpg" alt="Blog Post Image">
                     <h3>Top 5 Esports Tournaments to Watch</h3>
                     <p>A rundown of the top esports tournaments that you don't want to miss this year.</p>
-                    <a href="#" class="read-more-button">Read More</a>
+                    <a href="#blogs" class="read-more-button">Read More</a>
                 </div>
                 <div class="blog-card">
                     <img src="images/news3.jpg" alt="Blog Post Image">
                     <h3>How to Go Pro in Gaming</h3>
                     <p>Tips and strategies to take your gaming skills to the next level and become a pro.</p>
-                    <a href="#" class="read-more-button">Read More</a>
+                    <a href="#blogs" class="read-more-button">Read More</a>
                 </div>
             </div>
         </div>
 
         
-        <div class="subscription-section">
+        
+        <div id="newsletter" class="subscription-section">
             <div class="subscription-content">
                 <h1>Get Latest News in Your Inbox from Battlefly Gaming Community.</h1>
-                <a href="SignUp.html" class="subscribe-button">Subscribe Now</a>
+                
+                <form id="subscription-form">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-button">Subscribe Now</button>
+                </form>
             </div>
         </div>
 
-    <footer class="warzone-footer">
-        <div class="footer-container">
-            <div class="footer-branding">
-                <h1>WARZONE LEGACY</h1>
-                <p>Join the battle, conquer the battlefield, and leave your legacy in the world of warriors and strategists. The fight has just begun, and it's yours to win.</p>
-                <div class="social-icons">
-                    <a href="#"><img src="/images/facebook.jpg" alt="Discord"></a>
-                    <a href="#"><img src="/images/twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="/images/insta.jpg" alt="Instagram"></a>
-                    <a href="#"><img src="/images/youtube.png" alt="YouTube"></a>
+
+        <footer id="contact-us" class="warzone-footer">
+            <div class="footer-container">
+                <div class="footer-branding">
+                    <h1>WARZONE LEGACY</h1>
+                    <p>Join the battle, conquer the battlefield, and leave your legacy in the world of warriors and strategists. The fight has just begun, and it's yours to win.</p>
+                    <div class="social-icons">
+                        <a href="#contact-us" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#contact-us">Battlefields</a></li>
+                            <li><a href="#contact-us">Leaderboards</a></li>
+                            <li><a href="#contact-us">Team Up</a></li>
+                            <li><a href="#contact-us">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Player Resources</h3>
+                        <ul>
+                            <li><a href="#contact-us">Start Your Journey</a></li>
+                            <li><a href="#contact-us">Gear Up</a></li>
+                            <li><a href="#contact-us">Strategy Guides</a></li>
+                            <li><a href="#contact-us">Rewards</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#contact-us">Contact Command</a></li>
+                            <li><a href="#contact-us">FAQ</a></li>
+                            <li><a href="#contact-us">Game Updates</a></li>
+                            <li><a href="#contact-us">Terms of Engagement</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><a href="#">Battlefields</a></li>
-                        <li><a href="#">Leaderboards</a></li>
-                        <li><a href="#">Team Up</a></li>
-                        <li><a href="#">About Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Player Resources</h3>
-                    <ul>
-                        <li><a href="#">Start Your Journey</a></li>
-                        <li><a href="#">Gear Up</a></li>
-                        <li><a href="#">Strategy Guides</a></li>
-                        <li><a href="#">Rewards</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#">Contact Command</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Game Updates</a></li>
-                        <li><a href="#">Terms of Engagement</a></li>
-                    </ul>
-                </div>
+            <div class="footer-bottom">
+                <p>© 2024 Warzone Legacy. All rights reserved. Glory awaits those who are brave enough to take it.</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 Warzone Legacy. All rights reserved. Glory awaits those who are brave enough to take it.</p>
-        </div>
-    </footer>
+        </footer>
 
         
     </div>
