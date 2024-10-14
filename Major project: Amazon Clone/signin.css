@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.amazon-logo {
+    position: relative;
+    margin-bottom: 0; 
+    display: flex;
+    justify-content: center;
+}
+
+.amazon-logo img {
+    width: 100px;
+    position: absolute;
+    top: -60px; 
+}
+
+.container {
+    width: 320px;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 30px; 
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+}
+
+.signin-box h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-top: 0; 
+    text-align: left;
+    font-weight: 100;
+}
+
+.signin-box label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.signin-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c14b;
+    border: 1px solid #f0c14b;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.continue-btn:hover {
+    background-color: #ecb54a;
+}
+
+.signin-box p {
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.signin-box a {
+    color: #0066c0;
+    text-decoration: none;
+    text-align: left;
+}
+
+.signin-box a:hover {
+    text-decoration: underline;
+}
+
+.need-help {
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.new-account p, footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.create-account-btn {
+    padding: 10px;
+    width: 100%;
+    background-color: #e7e9ec;
+    border: 1px solid #adb1b8;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.create-account-btn a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.create-account-btn a:hover {
+    text-decoration: underline; 
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #0066c0,;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p{
+    margin-bottom: 5px;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-deliver">
+                <img src="images/logo.png" alt="Amazon Logo" class="logo">
+                <span class="deliver-to">
+                    <img src="images/location.png" alt="Location" class="location-icon">
+                    <span>
+                        <span>Deliver to <br> </span>
+                        <span class="location">India</span>
+                    </span>
+                </span>
+            </div>
+            <div class="search-bar">
+                <select name="category" id="category">
+                    <option value="all">All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="nav-options">
+                <span class="language">
+                    <img src="images/us_flag.png" alt="EN Flag" class="flag-icon">
+                    EN 
+                    <img src="images/dropdown_icon.png" alt="Dropdown" class="dropdown-icon">
+                </span>
+                <span><a href="signin.html">Hello, Sign in</a><br><b>Account & Lists</b></span>
+                <span>Returns<br><b>& Orders</b></span>
+                <span>
+                    <img src="images/cart_icon.png" alt="Cart" class="cart-icon">
+                    <b>Cart</b>
+                </span>
+            </div>
+        </div>
+        <div class="nav-bar">
+            <span class="menu"><i class="fa fa-bars"></i> All</span>
+            <span>Today's Deals</span>
+            <span>Customer Service</span>
+            <span>Registry</span>
+            <span>Gift Cards</span>
+            <span>Sell</span>
+        </div>
+    </header>
+        <div class="slider" id="slider">
+            <ul class="slides">
+                <li class="slide"><img src="images/hero1.jpg" alt=""></li>
+                <li class="slide"><img src="images/hero2.jpg" alt=""></li>
+                <li class="slide"><img src="images/hero3.jpg" alt=""></li>
+                <li class="slide"><img src="images/hero4.jpg" alt=""></li>
+                <li class="slide"><img src="images/hero5.jpg" alt=""></li>
+                <li class="slide"><img src="images/hero6.jpg" alt=""></li>
+            </ul>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+    
+        </div>
+        <section class="card-section">
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="card-header">Toys under $25</h3>
+                    <a href="ToyProductpage.html"><img src="images/card11.jpg" alt="Toys Image" class="product-image"></a>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Shop Now</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <h3 class="card-header">Fashion trends you like</h3>
+                    <div class="grid-layout">
+                        <div class="grid-item">
+                            <img src="images/card12.1.jpg" alt="Dresses" class="grid-image">
+                            <h3 class="grid-title">Dresses</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card12.2.jpg" alt="Knits" class="grid-image">
+                            <h3 class="grid-title">Knits</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card12.3.jpg" alt="Jackets" class="grid-image">
+                            <h3 class="grid-title">Jackets</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card12.4.jpg" alt="Jewelry" class="grid-image">
+                            <h3 class="grid-title">Jewelry</h3>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link right">Explore more</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <h3 class="card-header">Refresh your space</h3>
+                    <div class="grid-layout">
+                        <div class="grid-item">
+                            <img src="images/card13.1.jpg" alt="Dining" class="grid-image">
+                            <h3 class="grid-title">Dining</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card13.2.jpg" alt="Home" class="grid-image">
+                            <h3 class="grid-title">Home</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card13.3.jpg" alt="Kitchen" class="grid-image">
+                            <h3 class="grid-title">Kitchen</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card12.4.jpg" alt="Health and Beauty" class="grid-image">
+                            <h3 class="grid-title">Health and Beauty</h3>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link right">See more</a>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <h3 class="card-header">Appliances</h3>
+                    <img src="images/card14.jpg" alt="Appliances Image" class="product-image">
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="card-header">Easy updates for elevated spaces</h3> 
+                    <div class="grid-layout">
+                        <div class="grid-item">
+                            <img src="images/card21.1.jpg" alt="Home" class="grid-image">
+                            <h3 class="grid-title">Baskets & hampers</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card21.2.jpg" alt="Dining" class="grid-image">
+                            <h3 class="grid-title">Hardware</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card21.3.jpg" alt="Kitchen" class="grid-image">
+                            <h3 class="grid-title">Accent furniture</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card24.jpg" alt="Bedroom" class="grid-image">
+                            <h3 class="grid-title">Wallpaper & paint</h3>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Shop home products</a> 
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-header">Beauty steals under $25</h3>
+                    <img src="images/card22.jpg" alt="Electronics Image" class="product-image">
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Shop Now</a> 
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-header">Get tour game on</h3>
+                    <img src="images/card23.jpg" alt="Electronics Image" class="product-image">
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Shop gaming</a> 
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-header">Home decor under $50</h3>
+                    <img src="images/card24.jpg" alt="Appliances Image" class="product-image">
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Shop now</a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-slider">
+                <h2>Best Sellers in Computers and Accessories</h2>
+                <div class="product">
+                    <img src="images/slider1.1.jpg" alt="">
+                    <img src="images/slider1.2.jpg" alt="">
+                    <img src="images/slider1.3.jpg" alt="">
+                    <img src="images/slider1.4.jpg" alt="">
+                    <img src="images/slider1.5.jpg" alt="">
+                    <img src="images/slider1.6.jpg" alt="">
+                    <img src="images/slider1.7.jpg" alt="">
+                    <img src="images/slider1.8.jpg" alt="">
+                    <img src="images/slider1.9.jpg" alt="">
+                    <img src="images/slider1.10.jpg" alt="">
+                    <img src="images/slider1.11.jpg" alt="">
+                    <img src="images/slider1.12.jpg" alt="">
+                    <img src="images/slider1.13.jpg" alt="">
+                </div>
+            </div>
+            <div class="product-slider">
+                <h2>Best Sellers in Sports & Outdoors</h2>
+                <div class="product">
+                    <img src="images/slider2.1.jpg" alt="">
+                    <img src="images/slider2.2.jpg" alt="">
+                    <img src="images/slider2.3.jpg" alt="">
+                    <img src="images/slider2.4.jpg" alt="">
+                    <img src="images/slider2.5.jpg" alt="">
+                    <img src="images/slider2.6.jpg" alt="">
+                    <img src="images/slider2.7.jpg" alt="">
+                    <img src="images/slider2.8.jpg" alt="">
+                    <img src="images/slider2.9.jpg" alt="">
+                    <img src="images/slider2.10.jpg" alt="">
+                    <img src="images/slider2.11.jpg" alt="">
+                    <img src="images/slider2.12.jpg" alt="">
+                    <img src="images/slider2.13.jpg" alt="">
+                    <img src="images/slider2.14.jpg" alt="">
+                    <img src="images/slider2.15.jpg" alt="">
+                    <img src="images/slider2.16.jpg" alt="">
+                    <img src="images/slider2.17.jpg" alt="">
+                    <img src="images/slider2.18.jpg" alt="">
+                    <img src="images/slider2.19.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="card-header">Wireless Tech</h3> 
+                    <div class="grid-layout">
+                        <div class="grid-item">
+                            <img src="images/card31.1.jpg" alt="Home" class="grid-image">
+                            <h3 class="grid-title">Smartphones</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card31.2.jpg" alt="Dining" class="grid-image">
+                            <h3 class="grid-title">Watches</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card31.3.jpg" alt="Kitchen" class="grid-image">
+                            <h3 class="grid-title">Headphones</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card31.4.jpg" alt="Bedroom" class="grid-image">
+                            <h3 class="grid-title">Tablets</h3>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Discover more</a> 
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-header">Upgrade on Tech</h3> 
+                    <div class="grid-layout">
+                        <div class="grid-item">
+                            <img src="images/card32.1.jpg" alt="Home" class="grid-image">
+                            <h3 class="grid-title">PC</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card32.2.jpg" alt="Dining" class="grid-image">
+                            <h3 class="grid-title">Wireless</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card32.3.jpg" alt="Kitchen" class="grid-image">
+                            <h3 class="grid-title">Software</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card32.4.jpg" alt="Bedroom" class="grid-image">
+                            <h3 class="grid-title">Home entertainment</h3>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">Shop all tech deals</a> 
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <h3 class="card-header">Gaming merchandise</h3> 
+                    <div class="grid-layout">
+                        <div class="grid-item">
+                            <img src="images/card33.1.jpg" alt="Home" class="grid-image">
+                            <h3 class="grid-title">Apparel</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card33.2.jpg" alt="Dining" class="grid-image">
+                            <h3 class="grid-title">Hats</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card33.3.jpg" alt="Kitchen" class="grid-image">
+                            <h3 class="grid-title">Action figures</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card33.4.jpg" alt="Bedroom" class="grid-image">
+                            <h3 class="grid-title">Mugs</h3>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">See more</a> 
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <h3 class="card-header">Score the top PC's and Accessories</h3> 
+                    <div class="grid-layout">
+                        <div class="grid-item">
+                            <img src="images/card34.1.jpg" alt="Home" class="grid-image">
+                            <h3 class="grid-title">Desktops</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card34.2.jpg" alt="Dining" class="grid-image">
+                            <h3 class="grid-title">Laptops</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card34.3.jpg" alt="Kitchen" class="grid-image">
+                            <h3 class="grid-title">Hard Drives</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/card34.4.jpg" alt="Bedroom" class="grid-image">
+                            <h3 class="grid-title">PC Accessories</h3>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <a href="#" class="shop-now-link left">See more</a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-slider">
+                <h2>Top Sellers in Books for you</h2>
+                <div class="product">
+                    <img src="images/slider3.1.jpg" alt="">
+                    <img src="images/slider3.2.jpg" alt="">
+                    <img src="images/slider3.3.jpg" alt="">
+                    <img src="images/slider3.4.jpg" alt="">
+                    <img src="images/slider3.5.jpg" alt="">
+                    <img src="images/slider3.6.jpg" alt="">
+                    <img src="images/slider3.7.jpg" alt="">
+                    <img src="images/slider3.8.jpg" alt="">
+                    <img src="images/slider3.9.jpg" alt="">
+                    <img src="images/slider3.10.jpg" alt="">
+                    <img src="images/slider3.11.jpg" alt="">
+                    <img src="images/slider3.12.jpg" alt="">
+                    <img src="images/slider3.13.jpg" alt="">
+                    <img src="images/slider3.14.jpg" alt="">
+                    <img src="images/slider3.15.jpg" alt="">
+                    <img src="images/slider3.16.jpg" alt="">
+                    <img src="images/slider3.17.jpg" alt="">
+                    <img src="images/slider3.18.jpg" alt="">
+                    <img src="images/slider3.19.jpg" alt="">
+                    <img src="images/slider3.20.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <div class="signin-section">
+            <p>See personalized recommendations</p>
+            <a href="signin.html" class="signin-btn">Sign in</a>
+            <p>New customer? <a href="signUp.html"><h4>Start here</h4></a></p>
+        </div>
+    
+      
+        <footer id="footer" class="footer">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Get to Know Us</h3>
+                    <a href="#footer">Careers</a>
+                    <a href="#footer">Blog</a>
+                    <a href="#footer">About Amazon</a>
+                    <a href="#footer">Investor Relations</a>
+                    <a href="#footer">Amazon Devices</a>
+                    <a href="#footer">Amazon Science</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Make Money with Us</h3>
+                    <a href="#footer">Sell products on Amazon</a>
+                    <a href="#footer">Sell on Amazon Business</a>
+                    <a href="#footer">Sell apps on Amazon</a>
+                    <a href="#footer">Become an Affiliate</a>
+                    <a href="#footer">Advertise Your Products</a>
+                    <a href="#footer">Self-Publish with Us</a>
+                    <a href="#footer">Host an Amazon Hub</a>
+                    <a href="#footer"> See More Make Money with Us</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Amazon Payment Products</h3>
+                    <a href="#footer">Amazon Business Card</a>
+                    <a href="#footer">Shop with Points</a>
+                    <a href="#footer">Reload Your Balance</a>
+                    <a href="#footer">Amazon Currency Converter</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Let Us Help You</h3>
+                    <a href="#footer">Amazon and COVID-19</a>
+                    <a href="#footer">Your Account</a>
+                    <a href="#footer">Your Orders</a>
+                    <a href="#footer">Shipping Rates & Policies</a>
+                    <a href="#footer">Returns & Replacements</a>
+                    <a href="#footer">Manage Your Content and Devices</a>
+                    <a href="#footer">Help</a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </header>
+</body>
+</html>

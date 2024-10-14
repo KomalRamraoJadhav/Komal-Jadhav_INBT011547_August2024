@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #131a22;
+    color: white;
+    font-size: 14px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-deliver {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.deliver-to {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.location {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.location-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar select {
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #9cf8f8;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    font-size: 16px;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-options span {
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-options b {
+    font-weight: bold;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 13px;
+    margin-right: 5px;
+}
+
+.dropdown-icon {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+}
+
+.cart-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.nav-bar {
+    background-color: #232f3e;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+}
+
+.nav-bar span {
+    cursor: pointer;
+}
+
+.menu i {
+    font-size: 16px;
+}
+
+.header2 {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header2 h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.header2 h4 span {
+    color: orange;
+}
+
+.header2 .sort-by {
+    display: flex;
+    align-items: center;
+}
+
+.header2 .sort-by label {
+    margin-right: 5px;
+}
+
+main.container {
+    display: flex;
+    padding: 20px;
+}
+
+.container a{
+    color: blue;
+}
+
+aside {
+    width: 25%;
+    padding-right: 20px;
+}
+
+aside h2, aside h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li span.dropdown-icon {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.results {
+    width: 75%;
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.card .price {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px;
+}
+
+.card button {
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.card button:hover {
+    background-color: #e6b800;
+}
+
+.card p{
+    font-weight: 4px;
+    margin-bottom: 5px;
+}
+
+.coupon{
+    background-color: aquamarine;
+}
+
+@media (max-width: 1200px) {
+    .card-row {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .card-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .card-row {
+        grid-template-columns: 1fr;
+    }
+}
